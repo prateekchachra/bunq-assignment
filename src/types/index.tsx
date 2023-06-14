@@ -1,16 +1,18 @@
-
 export type User = {
+    id: number;
     userName: string;
     userAvatar: string;
     firstName: string;
-    dateOfJoining: string; // TODO: moment
+    dateOfJoining: Date;
 }
 
 export type Message = {
+    id: number;
     message: string;
     user: User;
-    dateTime: string;
+    dateTime: Date;
 }
 export type Chat = {
+    id: number;
     messages: Message[];
 }

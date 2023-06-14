@@ -1,11 +1,11 @@
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import Home from './routes/home'
-import Login from './routes/login'
-import Conversation from './routes/conversation'
-import User from './routes/user'
-import ErrorPage from './routes/error-page'
+import Home from 'routes/home'
+import Login from 'routes/login'
+import Chat from 'routes/chat'
+import User from 'routes/user'
+import ErrorPage from 'routes/error-page'
 
 const router = createBrowserRouter([
   {
@@ -18,8 +18,8 @@ const router = createBrowserRouter([
     element: <Login />,
   },
   {
-    path: "conversation/:conversationId",
-    element: <Conversation />,
+    path: "chat/:chatId",
+    element: <Chat />,
   },
   {
     path: "user/:userId",
